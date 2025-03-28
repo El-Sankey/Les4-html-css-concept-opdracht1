@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,500;1,18..144,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -10,7 +18,9 @@
         4.2 Introduction
         etc.
     5. Media Queries
-////////////////////////*/
+    6. Footer
+
+ ////////////////////////*/
 
 /*De gebruikte fonts-family voor de "<headings->>Merriweather<<"  en >>Roboto<< voor "normale tekst".*/
 
@@ -34,22 +44,69 @@
 body {
     display: flex;
     min-height: 100vh;
-    font-family:  sans-serif;
+    flex-direction: column;
 
 }
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
+/*Paars #5722CD;*/
+/*Blauw #4845E4;*/
+/*Roze #ED4385;*/
+/*Zwart #0C0C0C (voor standaard tekst);*/
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen: */
+/*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
+/*Grijs #7A7A7A (voor de service-tegel tekst);*/
+
+h1, h2 {
+    font-family:  merriweather sans-serif;
+}
+p, a {
+    font-family: roboto sans-serif;
+    color: #0C0C0C;
+}
+
 /* ------------------------------- 3. Layout --------------------------------------- */
+
 
 /* --------------- 3.1 Reusables ----------------------- */
 
+
 /* --------------- 3.2 Other --------------------------- */
+
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
+
 /* --------------- 4.1 Header ------------------------- */
+
+.nav {
+    border:2px dotted deeppink;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 5% 0 5%;
+    padding: 15px;
+}
+.iner-nav {
+    border: 2px dashed lightgreen;
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    /*justify-content: space-around;*/
+    gap: 45px;
+}
+.div-hdr {
+    border-style: groove;
+    display: flex;
+    justify-content: center;
+}
+
 
 /* --------------- 4.2 Introduction ------------------- */
 
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+
+/* --------------- 6. footer ------------------------- */
