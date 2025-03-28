@@ -58,10 +58,22 @@ body {
 /*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
 /*Grijs #7A7A7A (voor de service-tegel tekst);*/
 
-h1, h2 {
+header {
+    /*color: white;*/
+    /*background-color: #5722CD;*/
+}
+h1 {
+    font-family:  merriweather sans-serif;
+    font-size: 3em;
+}
+h2 {
+    font-family:  merriweather sans-serif;
+    font-size: 3em;
+}
+h3 {
     font-family:  merriweather sans-serif;
 }
-p, a {
+p {
     font-family: roboto sans-serif;
     color: #0C0C0C;
 }
@@ -73,7 +85,7 @@ p, a {
 
 
 /* --------------- 3.2 Other --------------------------- */
-
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services"
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
@@ -81,25 +93,31 @@ p, a {
 /* --------------- 4.1 Header ------------------------- */
 
 .nav {
-    border:2px dotted deeppink;
+    border: 2px dotted deeppink;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin: 0 5% 0 5%;
-    padding: 15px;
+    padding: 10px;
 }
 .iner-nav {
     border: 2px dashed lightgreen;
     display: flex;
     justify-content: space-around;
     width: 25%;
-    /*justify-content: space-around;*/
     gap: 45px;
+    flex-shrink: 0;
+    /*flex-wrap: nowrap;*/
 }
-.div-hdr {
-    border-style: groove;
+.hdr-container {
+    border: 2px dot-dash white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 
@@ -110,3 +128,7 @@ p, a {
 
 
 /* --------------- 6. footer ------------------------- */
+footer {
+
+}
+
