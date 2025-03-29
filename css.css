@@ -36,9 +36,9 @@
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,26 +52,27 @@ body {
 
 /*Paars #5722CD;*/
 /*Blauw #4845E4;*/
-/*Roze #ED4385;*/
-/*Zwart #0C0C0C (voor standaard tekst);*/
-/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen: */
+/*Roze < buttons >  */
+/*Zwart < p > (voor standaard tekst);*/
+/*Lichtpaars < header > (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen: */
 /*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
 /*Grijs #7A7A7A (voor de service-tegel tekst);*/
 
 header {
-    /*color: white;*/
-    /*background-color: #5722CD;*/
+    color: white;
+    background-color: #5722CD;
 }
-h1 {
-    font-family:  merriweather sans-serif;
-    font-size: 3em;
-}
-h2 {
+h1, h2 {
     font-family:  merriweather sans-serif;
     font-size: 3em;
 }
 h3 {
     font-family:  merriweather sans-serif;
+    font-size: 2em;
+}
+h4 {
+    font-family: merriweather sans-serif;
+    font-size: 2em;
 }
 p {
     font-family: roboto sans-serif;
@@ -93,35 +94,45 @@ p {
 /* --------------- 4.1 Header ------------------------- */
 
 .nav {
-    border: 2px dotted deeppink;
+    /*border: 2px dotted deeppink;*/
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     margin: 0 5% 0 5%;
     padding: 10px;
 }
 .iner-nav {
-    border: 2px dashed lightgreen;
+    /*border: 2px dashed lightgreen;*/
     display: flex;
-    justify-content: space-around;
-    width: 25%;
+    justify-content: flex-end;
+    width: 35%;
     gap: 45px;
     flex-shrink: 0;
-    /*flex-wrap: nowrap;*/
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    list-style-type: none;
 }
-.hdr-container {
-    border: 2px dot-dash white;
+.hdr-container, .section-1 {
+    /*border: 2px dot-dash black;*/
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 500px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 19%;
+    margin-right: 19%;
+    padding: 40px;
+}
+.hdr-btn {
+    background-color: #ED4385;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 15px;
+    padding-right: 25px;
 }
 
-
 /* --------------- 4.2 Introduction ------------------- */
+
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
