@@ -133,10 +133,9 @@ p {
 }
 .line+~~~ {
     position: absolute;
-    align-content: flex-end;
-
+    align-content: center;
+    margin-top: 30px;
 }
-
     /* --------------- 4.2 Introduction ------------------- */
 .section-1{
     text-align: center;
