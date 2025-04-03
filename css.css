@@ -106,35 +106,41 @@ p {
     flex-basis: auto;
     list-style-type: none;
     margin: 10px;
+    text-decoration: none;
 }
 
 .hdr-container {
-    text-align: center;
     display: flex;
+    text-align: center;
     flex-flow: column wrap;
-    margin-left: 16%;
-    margin-right:16%;
+    margin-right: 16%;
+    margin-bottom: 100px;
+    margin-left:  16%;
     padding: 75px;
     position: relative;
 }
 
 .hdr-p{
     font-size: 1.5em;
+    color: white;
+    margin-top: 25px;
 }
 
-.hdr-btn {
-    color: white;
+#hdr-btn:link, #hdr-btn:visited {
     background-color: #ED4385;
+    color: white;
     border-radius: 40px;
     height: 60px;
     width: 219px;
-    margin-top: 28px;
+    margin-top: 10px;
     margin-left: 232px;
+    padding: 17px;
+    text-decoration: none;
 }
-.squirl+line {
+.squirl-line {
     position: absolute;
-    align-content: center;
-    margin-top: 30px;
+    margin-top: 340px;
+    margin-left: 300px;
 }
     /* --------------- 4.2 Introduction ------------------- */
 .section-1{
