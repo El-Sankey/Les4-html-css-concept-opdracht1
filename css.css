@@ -50,34 +50,27 @@ body {
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
-/*Paars #5722CD;*/
-/*Blauw #4845E4;*/
-/*Roze < buttons >  */
-/*Zwart < p > (voor standaard tekst);*/
-/*Lichtpaars < header > (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen: */
-/*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
-/*Grijs #7A7A7A (voor de service-tegel tekst);*/
-
 header {
     color: white;
     background-color: #5722CD;
 }
+h1, h2, h3, h4{
+    font-family:  merriweather, sans-serif;
+}
+
 h1, h2 {
-    font-family:  merriweather sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
 }
+
 h3 {
-    font-family:  merriweather sans-serif;
-    font-size: 2em;
+    font-size: 1.6em;
 }
-h4 {
-    font-family: merriweather sans-serif;
-    font-size: 2em;
-}
+
 p {
-    font-family: roboto sans-serif;
+    font-family: roboto, sans-serif;
     color: #0C0C0C;
 }
+
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
@@ -96,50 +89,81 @@ p {
 .nav {
     /*border: 2px dotted deeppink;*/
     display: flex;
+    color: white;
     justify-content: flex-end;
-    margin: 0 5% 0 5%;
+    margin: 0 3%;
     padding: 10px;
 }
 .iner-nav {
     /*border: 2px dashed lightgreen;*/
     display: flex;
+    flex-flow: row nowrap;
     justify-content: flex-end;
+    align-items: baseline;
     width: 35%;
     gap: 45px;
     flex-shrink: 0;
-    flex-wrap: nowrap;
     flex-basis: auto;
     list-style-type: none;
+    margin: 10px;
 }
-.hdr-container, .section-1 {
-    /*border: 2px dot-dash black;*/
+
+.hdr-container {
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 16%;
+    margin-right:16%;
+    padding: 75px;
+    position: relative;
+}
+
+.hdr-p{
+    font-size: 1.5em;
+}
+
+.hdr-btn {
+    color: white;
+    background-color: #ED4385;
+    border-radius: 40px;
+    height: 60px;
+    width: 219px;
+    margin-top: 28px;
+    margin-left: 232px;
+}
+.line+~~~ {
+    position: absolute;
+    align-content: flex-end;
+
+}
+
+    /* --------------- 4.2 Introduction ------------------- */
+.section-1{
+    text-align: center;
+    margin-left: 16%;
+    margin-right:16%;
+    padding: 85px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 500px;
-    margin-left: 19%;
-    margin-right: 19%;
-    padding: 40px;
-}
-.hdr-btn {
-    background-color: #ED4385;
-    border-radius: 20px;
-    padding-top: 15px;
-    padding-left: 25px;
-    padding-bottom: 15px;
-    padding-right: 25px;
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 
-/* --------------- 4.2 Introduction ------------------- */
+    /* ------------------------------- 5. Media Queries -------------------------------- */
+@media screen and (min-width: 576px) {
+    font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+    font-size: 14px;
+}
+@media screen and (min-width: 992px) {
+    font-size: 16px;
+}
 
 
-
-/* ------------------------------- 5. Media Queries -------------------------------- */
-
-
-/* --------------- 6. footer ------------------------- */
+    /* --------------- 6. footer ------------------------- */
 footer {
-
+    color: white;
+    background-color: black;
+    text-align: center;
 }
-
