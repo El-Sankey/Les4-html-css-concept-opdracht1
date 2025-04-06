@@ -45,7 +45,7 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Les4-html-css-concept-opdracht1",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/iariv/WebstormProjects/frontend-html-css-concept-opdracht1",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -79,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742918588537</updated>
       <workItem from="1742918589698" duration="66419000" />
-      <workItem from="1743345723116" duration="44478000" />
+      <workItem from="1743345723116" duration="109784000" />
     </task>
     <servers />
   </component>

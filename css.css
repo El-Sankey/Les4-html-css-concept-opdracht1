@@ -73,19 +73,148 @@ p {
 
 
 /* ------------------------------- 3. Layout --------------------------------------- */
-
-
 /* --------------- 3.1 Reusables ----------------------- */
+
+/*......sections......*/
+{
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+    margin: 10px 16% 120px;
+    padding: 70px;
+    position: relative;
+}
+/*.......form.......*/
+{
+    display: flex;
+    width: 370px;
+    color: white;
+    background-color: #4845E4;
+}
+
+/*......image......*/
+{
+    width: 100%;
+}
+
+/*....image-wrappe.... */
+{
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
 
 
 /* --------------- 3.2 Other --------------------------- */
-/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services"
+a:link {
+    color: white;
+}
+a:visited {
+    color: lightskyblue;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.article1, .article2, .article3 {
+    display: flex;
+}
+.div-art1, .div-art2, .div-art3 {
+    padding: 10px;
+    margin: 100px 60px 40px;
+}
+.img-wrapper {
+    margin: 5px 10px;
+    padding: 0 20px 0 50px;
+}
+
+.article2 {
+    flex-direction: row-reverse;
+}
+
+
+.section-3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 5px 10px;
+    padding: 0 20px 0 50px;
+}
+.sect3-card {
+    flex: 1 1 calc(50% - 100px);
+    max-width: 330px;
+    padding: 35px;
+    border: 1.5px solid;
+    border-radius: 3px;
+    /*transition: transform 0.3s ease;*/
+}
+.sect-3 image {
+    width: 40px;
+    height: 30px;
+    border-radius: 30%;
+}
+.sect3-card h3 {
+    margin: 0 0 8px;
+}
+
+.sect3-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    background-color: #4845E4;
+}
+#Contact-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #4845E4;
+    width: 60%;
+    margin-bottom: 200px;
+}
+.name, .email, .message {
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color:  #5722CD;
+}
+.input-Name {
+    height: 15%;
+}
+.input-Email {
+    height: 25%;
+}
+textarea {
+    height: 50%;
+
+}
+
+.form-btn {
+    color: white;
+    background-color: #ED4385;
+    border-radius: 40px;
+    height: 60px;
+    width: 150px;
+    margin-left: 300px;
+    padding: 17px;
+    text-align: center;
+    text-decoration: none;
+}
+.span-btn {
+    background-color: #4845E4;
+    margin-bottom: 20%;
+}
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
-
-
 /* --------------- 4.1 Header ------------------------- */
-
 .nav {
     /*border: 2px dotted deeppink;*/
     display: flex;
@@ -95,37 +224,35 @@ p {
     padding: 10px;
 }
 .iner-nav {
-    /*border: 2px dashed lightgreen;*/
+    text-decoration: none;
+    list-style-type: none;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: baseline;
+    color: white;
     width: 35%;
     gap: 45px;
     flex-shrink: 0;
     flex-basis: auto;
-    list-style-type: none;
     margin: 10px;
-    text-decoration: none;
 }
-
+.iner-nav:hover {
+    color: white;
+}
 .hdr-container {
     display: flex;
     text-align: center;
     flex-flow: column wrap;
-    margin-right: 16%;
-    margin-bottom: 100px;
-    margin-left:  16%;
-    padding: 75px;
+    flex-shrink: 1;
+    margin: 5px 16% 120px;
+    padding: 70px;
     position: relative;
 }
-
 .hdr-p{
     font-size: 1.5em;
     color: white;
-    margin-top: 25px;
 }
-
 #hdr-btn:link, #hdr-btn:visited {
     background-color: #ED4385;
     color: white;
@@ -133,26 +260,37 @@ p {
     height: 60px;
     width: 219px;
     margin-top: 10px;
-    margin-left: 232px;
+    margin-left: 240px;
     padding: 17px;
     text-decoration: none;
 }
 .squirl-line {
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 1;
     position: absolute;
     margin-top: 340px;
-    margin-left: 300px;
+    margin-left: 315px;
 }
+
+
     /* --------------- 4.2 Introduction ------------------- */
-.section-1{
-    text-align: center;
-    margin-left: 16%;
-    margin-right:16%;
-    padding: 85px;
+.section-1 {
     display: flex;
-    flex-direction: column;
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    text-align: center;
+    flex-flow: column wrap;
+    flex-shrink: 1;
+    margin: 70px 16% 120px;
+    padding: 60px;
 }
+.sect-p {
+    margin-top: 130px;
+    color: #0C0C0C;
+}
+.sect-h3 {
+    color: #5722CD;
+}
+
 
     /* ------------------------------- 5. Media Queries -------------------------------- */
 @media screen and (min-width: 576px) {
@@ -171,4 +309,7 @@ footer {
     color: white;
     background-color: black;
     text-align: center;
+}
+.ftr-p {
+    color: white;
 }
